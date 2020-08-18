@@ -7,7 +7,7 @@
           by Rodney Caneda
         </div>
         <div class="card-body">
-\            <div class="card-text text-left"> <%= simple_format(@article.description) %> </div>
+          <div class="card-text text-left"> <%= simple_format(@article.description) %> </div>
           <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
           <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"}  %>
         </div>
